@@ -1,0 +1,41 @@
+$red: #af0000;
+
+.paginate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paginate-item {
+  color: $red;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 3em;
+  min-width: 3em;
+  padding-bottom: 0.1em;
+}
+
+.paginate-item.next {
+  padding: 15px 15px 10px 15px;
+  border-radius: 12px;
+}
+
+.paginate-item.active {
+  background-color: $red;
+}
+
+.paginate-item.active > * {
+  color: white !important;
+}
+
+.paginate-link {
+  padding: 15px 15px 10px 15px;
+  text-align: center;
+}

@@ -1,0 +1,1 @@
+export { Timeago } from "./Timeago";

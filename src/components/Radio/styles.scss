@@ -1,0 +1,20 @@
+/* HIDE RADIO */
+#radio [type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.check-box {
+  display: none;
+}
+
+[type="radio"]:checked + .radio {
+  border-color: crimson;
+  color: crimson;
+}
+
+[type="radio"]:checked + .radio .check-box {
+  display: block;
+}

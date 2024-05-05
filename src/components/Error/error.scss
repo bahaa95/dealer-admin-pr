@@ -1,0 +1,106 @@
+.error-comp-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-comp {
+  height: 50vh;
+  width: 80%;
+  padding: 1em 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--prim);
+  border-radius: 30px;
+  box-shadow: 1px 10px 19px 0px rgba(1, 6, 123, 0.12);
+  -webkit-box-shadow: 1px 10px 19px 0px rgba(1, 6, 123, 0.12);
+  -moz-box-shadow: 1px 10px 19px 0px rgba(1, 6, 123, 0.12);
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    padding: 1em 2em;
+  }
+
+  @media screen and (max-width: 567px) {
+    width: 100%;
+    padding: 1em 0;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+}
+
+.error-comp-title {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+.error-comp-message {
+  font-size: 1rem;
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2em;
+  padding-bottom: 1em;
+}
+
+.error-comp-code {
+  display: block;
+  color: rgb(55, 55, 248);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.error-comp-actions {
+  padding-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.error-comp-actions-reset {
+  margin-bottom: 2.5em;
+  border-radius: 1em;
+}
+
+.error-comp-actions-links {
+  display: flex;
+}
+
+.error-comp-actions-link {
+  position: relative;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  display: block;
+  text-decoration: underline;
+}
+
+.error-comp-actions-link:hover {
+  color: var(--sky);
+}
+
+.error-comp-actions-link:hover::before {
+  background-color: var(--sky);
+}
+
+.error-comp-actions-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--sea);
+}

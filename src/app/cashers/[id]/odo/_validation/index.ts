@@ -1,0 +1,1 @@
+export { odoSchema } from "./odoSchema";
