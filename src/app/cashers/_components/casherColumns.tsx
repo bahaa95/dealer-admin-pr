@@ -70,7 +70,7 @@ export const cashersColumns = () => [
     ),
   },
   {
-    headerName: "الرصيد",
+    headerName: "الدين",
     field: "balance",
     flex: 1,
     resizable: false,

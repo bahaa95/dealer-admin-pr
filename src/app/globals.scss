@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap");
-@import 'ag-grid-community/styles/ag-grid.css';
+@import "ag-grid-community/styles/ag-grid.css";
 @import "ag-grid-community/styles/ag-theme-quartz.css";
 @tailwind base;
 @tailwind components;
@@ -40,4 +40,8 @@ body {
 
 .react-datepicker-wrapper {
   width: 100%;
+}
+
+.ag-header-cell-text {
+  padding: 0.2em 0;
 }

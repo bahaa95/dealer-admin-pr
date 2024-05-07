@@ -112,7 +112,14 @@ export const HomeContainer = () => {
                       )}
                     >
                       <Column className="text-gray-500">
-                        {o.employee.fullName}
+                        <div>
+                          <p className="text-gray-600">{o.employee.fullName}</p>
+                          <p className="text-gray-500 text-xs">
+                            {o.mangerUsername?.length
+                              ? o.mangerUsername?.split("/")[1]
+                              : null}
+                          </p>
+                        </div>
                       </Column>
                       <Column className="justify-center">
                         <Status status={o.Payment?.paymentStatus} />
@@ -213,11 +220,8 @@ export const HomeContainer = () => {
                     )}
                   >
                     <Column className="text-gray-500">{c.username}</Column>
-                    {/* <Column className="justify-center">
-                      <Status status={c.} />
-                    </Column> */}
                     <Column className="justify-end text-end">
-                      {formatMoney(c.totalAmount)}
+                      {formatMoney(c.casherWalet.balance)}
                     </Column>
                   </div>
                 </li>
